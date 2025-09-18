@@ -153,7 +153,11 @@ export BANK_DB_PATH=mydata.db   # macOS/Linux
 
 ## License
 
-MIT © 2025 Dhyan Patel
+Copyright (c) 2025 Dhyan Patel
+All rights reserved.
+
+This project and its source code are the intellectual property of the author.
+No part of this project may be copied, modified, distributed, or used in any form without express written permission from the author.
 
 ---
 
