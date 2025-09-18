@@ -1,3 +1,4 @@
+# .github/workflows/ci.yml
 name: CI
 on: [push, pull_request]
 jobs:
@@ -7,5 +8,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
-      - run: pip install -U pip pytest
+      - run: pip install -U pip
+      - run: pip install -e .[dev]
+      - run: python -c "import bankingproject_v2; print('import OK')"
       - run: pytest -q

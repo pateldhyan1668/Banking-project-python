@@ -13,7 +13,7 @@ dependencies = []
 optional-dependencies.dev = ["pytest"]
 
 [tool.setuptools]
-py-modules = ["bankingproject_v2"]   # <— IMPORTANT
+py-modules = ["bankingproject_v2"]   # <- single-file module name (no .py)
 
 [project.scripts]
-banking = "bankingproject_v2:main"   # <— matches your file
+banking = "bankingproject_v2:main"
