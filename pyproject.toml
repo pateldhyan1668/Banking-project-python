@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "banking-cli"
 version = "0.1.0"
@@ -8,5 +12,8 @@ authors = [{ name = "Dhyan Patel" }]
 dependencies = []
 optional-dependencies.dev = ["pytest"]
 
+[tool.setuptools]
+py-modules = ["bankingproject_v2"]   # <— IMPORTANT
+
 [project.scripts]
-banking = "bankingproject_v2:main"
+banking = "bankingproject_v2:main"   # <— matches your file
