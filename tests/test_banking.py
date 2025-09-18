@@ -5,7 +5,7 @@ import types
 
 def fresh_module(db_path=":memory:"):
     os.environ["BANK_DB_PATH"] = db_path
-    mod = importlib.import_module("banking.app")
+    mod = importlib.import_module("bankingproject_v2")
     importlib.reload(mod)
     return mod
 

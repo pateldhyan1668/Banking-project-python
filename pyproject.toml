@@ -9,4 +9,4 @@ dependencies = []
 optional-dependencies.dev = ["pytest"]
 
 [project.scripts]
-banking = "banking:main"
+banking = "bankingproject_v2:main"
