@@ -1,0 +1,12 @@
+[project]
+name = "banking-cli"
+version = "0.1.0"
+description = "Secure CLI banking demo with SQLite and PBKDF2"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Dhyan Patel" }]
+dependencies = []
+optional-dependencies.dev = ["pytest"]
+
+[project.scripts]
+banking = "banking:main"
